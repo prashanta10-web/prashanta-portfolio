@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prashanta Paudel | Portfolio</title>
+  <!-- Add Font Awesome CDN for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('studio.bg.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .mockup-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      aspect-ratio: 16 / 10;
+    }
+
+    .mockup-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      content: url('laptop-mockup.png'); /* default to laptop */
+    }
+
+    .content {
+      position: absolute;
+      top: 5%;
+      left: 20%;
+      width: 60%;
+      height:60%;
+      background: rgba(0, 0, 0, 0.9);
+      border-radius: 12px;
+      padding: 20px;
+      overflow-y: auto;
+      color: white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .browser-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .red { background-color: #ff605c; }
+    .yellow { background-color: #ffbd44; }
+    .green { background-color: #00ca4e; }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid #fff;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+      color: #03C8FF;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: #BB01FF;
+    }
+
+    .box {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #f0f0f0;
+      border-left: 4px solid;
+    }
+
+    .about-box { border-color: #01C5FB; }
+    .projects-box { border-color: #f1c40f; }
+    .contact-box { border-color: #e74c3c; }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 14px;
+      color: #444;
+    }
+
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-icons i {
+      font-size: 18px;
+      margin-right: 10px;
+      color: BLACK;
+    }
+    @media (max-width: 768px) {
+      .mockup-wrapper {
+        aspect-ratio: 9 / 19.5;
+      }
+      .mockup-img {
+        content: url('mobile-mockup.png');
+      }
+
+      .content {border-radius: 25px;
+        top: 30%;
+        left: 10.5%;
+        width: 44%;
+        height: 36%;
+        padding: 15px;
+      }
+
+      .profile-img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .name { font-size: 18px; }
+      .subtitle { font-size: 12px; }
+      h2 { font-size: 16px; }
+      p { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mockup-wrapper">
+    <img class="mockup-img" alt="Device Mockup" />
+    
+    <div class="content">
+      <div class="browser-header">
+        <div class="circle red"></div>
+        <div class="circle yellow"></div>
+        <div class="circle green"></div>
+      </div>
+
+      <div class="header">
+        <img src="profile.png" alt="Prashanta Paudel" class="profile-img" />
+        <div class="name">Prashanta Paudel</div>
+        <div class="subtitle">Web Developer | Thumbnail Designer | Content Editor</div>
+      </div>
+
+      <div class="box about-box">
+        <h2>About Me</h2>
+        <p>
+          I'm a learner and writer developer who loves building clean, responsive, and visually appealing websites.
+          My goal is to bring ideas to life in the browser using HTML, CSS,(ALSO LEARNING OTHER PROGRAMMING LANGUAGE). I am also a thumbnail editor and video editor.
+        </p>
+      </div>
+      
+      
+
+      <div class="box projects-box">
+        <h2>Projects</h2>
+        <p>
+          A modern and responsive portfolio(PORTFOLLIO WEBSITE)built using HTML, CSS, and JavaScript. 
+          Designed to showcase my work and skills creatively. I have also created some videos and thumbnails for some channels, those channels are also reaching 1k views.
+        </p>
+      </div>
+
+      <div class="box contact-box">
+        <h2>Education</h2>
+       <P> Studying in:class10 | Passed BLE with 3.69 GPA<P>
+         </div>
+       <div class="box contact-box">
+        <h2>Contact</h2>
+        <div class="contact-icons">
+          <a href="mailto:prashantapaudel30@gmail.com"><i class="fab fa-google"></i></a>
+          <a href="https://instagram.com/@PRASHANTA.PAUDEL.10" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="tel:+977-9846177531"><i class="fas fa-phone"></i></a>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
